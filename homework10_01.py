@@ -26,11 +26,12 @@ def collect_cisco_interfaces(hosts, username, password, command=SHOW_IP_INT_BRIE
             continue
         print(f"---------- {ip} 接口信息 ----------")
         print(out.rstrip("\n"))
+        print()
 
 
 if __name__ == "__main__":
     # 思科路由器：按实际环境修改 IP / 账号
-    ROUTERS = ["10.10.1.254", "10.10.1.253"]
+    ROUTERS = ["10.10.1.254", "10.10.1.253","10.10.1.252"]
     USERNAME = "cisco"
     PASSWORD = "Cisc0123"
 
